@@ -13,9 +13,9 @@ class _ResultPageState extends State<ResultPage> {
   int marks;
   _ResultPageState(this.marks);
   List<String> images = [
-    'images/mux.png',
-    'images/mux.png',
-    'images/mux.png',
+    'images/good.png',
+    'images/keep.png',
+    'images/fail.png',
   ];
 
   String message;

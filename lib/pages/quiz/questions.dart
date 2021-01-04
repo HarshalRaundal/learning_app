@@ -7,7 +7,7 @@ import 'dart:math';
 
 
 
-Color colorToShow = Colors.indigoAccent;
+Color colorToShow = Colors.tealAccent;
 Color right =Colors.green;
 Color wrong =Colors.red;
 Color neutral=Colors.tealAccent;
@@ -56,7 +56,7 @@ Map<int,String> ans={
   2:" Strobe",
   3:" Selected lines",
   4:  " m",
-  6: " Data selector",
+  5: " Data selector",
 };
 
 Map<int,Map> opt={
@@ -149,6 +149,7 @@ class _QuizCardState extends State<QuizCard> {
 
 
   void goToResult(){
+
     Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>ResultPage(marks: marks,)));
   }
 
@@ -171,11 +172,11 @@ class _QuizCardState extends State<QuizCard> {
 
     if(click==opt[6][i])
     {
-      colorToShow=right;
+      //colorToShow=right;
       marks=marks+5;
     }
     else{
-      colorToShow=wrong;
+      //colorToShow=wrong;
     }
     setState(() {
       // applying the changed color to the particular button that was selected
